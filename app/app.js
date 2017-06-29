@@ -29,7 +29,7 @@ function startTimer(){
         //here goes the function by 1 sec. 
         document.getElementById("timer").innerHTML = hour + ":" + min + ":" + sec;
         runFunction=setTimeout(startTimer, 1000);
-        }
+}
 
 //shuffling method
 
@@ -73,13 +73,14 @@ function memoryFlipTile(tile, val){
                     setTimeout (alert ("Congratulations you've succesfully done this in "+timeValue+" Board cleared, nedd a new one"), 1000);
                     document.getElementById('memory_board').innerHTML = "";
                     newBoard();
+                    startTimer();
                 }
             }else{
                 function flip2Back (){
                     //flipping tiles if they aren't equal
                     var tile_1=document.getElementById(memory_tile_ids[0]);
                     var tile_2=document.getElementById(memory_tile_ids[1]);
-                    tile_1.style.background = '#00000';
+                    tile_1.style.background = ("images/puss.jpg");
                     tile_1.innerHTML = "";
                     tile_2.style.background = '#00000';
                     tile_2.innerHTML = "";
