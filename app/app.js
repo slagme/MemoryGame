@@ -53,7 +53,7 @@ function newBoard(){
 }
 function memoryFlipTile(tile, val){
     if(tile.innerHTML === "" && memory_values.length < 2 ){
-        tile.style.background='#FFF';
+        tile.style.background="#e6e6e6";
         tile.innerHTML = val;
         if(memory_values.length === 0){
             memory_values.push(val);
@@ -80,9 +80,9 @@ function memoryFlipTile(tile, val){
                     //flipping tiles if they aren't equal
                     var tile_1=document.getElementById(memory_tile_ids[0]);
                     var tile_2=document.getElementById(memory_tile_ids[1]);
-                    tile_1.style.background = ("images/puss.jpg");
+                    tile_1.style.backgroundImage = "url('../images/bg.jpg')";
                     tile_1.innerHTML = "";
-                    tile_2.style.background = '#00000';
+                    tile_2.style.background = "url('../images/bg.jpg')";
                     tile_2.innerHTML = "";
                     //clearing arrays
                     memory_values = [];
