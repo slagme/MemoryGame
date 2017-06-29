@@ -73,6 +73,7 @@ function memoryFlipTile(tile, val){
                     setTimeout (alert ("Congratulations you've succesfully done this in "+timeValue+" Board cleared, nedd a new one"), 1000);
                     document.getElementById('memory_board').innerHTML = "";
                     newBoard();
+                    //need to start 0:0:0 timer - clearing timer function
                     startTimer();
                 }
             }else{
