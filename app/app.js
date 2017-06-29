@@ -82,7 +82,7 @@ function memoryFlipTile(tile, val){
                     var tile_2=document.getElementById(memory_tile_ids[1]);
                     tile_1.style.backgroundImage = "url('../images/bg.jpg')";
                     tile_1.innerHTML = "";
-                    tile_2.style.background = "url('../images/bg.jpg')";
+                    tile_2.style.backgroundImage = "url('../images/bg.jpg')";
                     tile_2.innerHTML = "";
                     //clearing arrays
                     memory_values = [];
